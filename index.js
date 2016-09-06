@@ -1,7 +1,7 @@
 var Stack = {
     arr : [],
     push: function(value){
-        this.arr[arr.length] = value;
+        this.arr[this.arr.length] = value;
     },
     pop: function(){
         this.arr.splice(this.arr.length -1,1);
@@ -13,7 +13,7 @@ var Stack = {
 
 function StackConstructor() {
     var s = Object.create(Stack);
-    s.arr = ["Mike", "Ram"];
+    s.arr = [];
     return s;
 }
 
@@ -23,5 +23,3 @@ newStack.push("Rom");
 newStack.peek(); //should print Ron
 newStack.pop();
 newStack.peek(); //should print Mike
-newStack.pop();
-newStack.peek();
