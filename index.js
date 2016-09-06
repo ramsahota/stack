@@ -23,3 +23,6 @@ newStack.push("Rom");
 newStack.peek(); //should print Ron
 newStack.pop();
 newStack.peek(); //should print Mike
+
+exports.Stack = Stack;
+exports.StackConstructor = StackConstructor;

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ramsahota/stack/issues"
   },
-  "homepage": "https://github.com/ramsahota/stack#readme"
+  "homepage": "https://github.com/ramsahota/stack#readme",
+  "dependencies": {
+    "mocha": "^3.0.2"
+  }
 }
