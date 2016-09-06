@@ -1,14 +1,27 @@
-//adding a stack class
+var Stack = {
+    arr : [],
+    push: function(value){
+        this.arr[arr.length] = value;
+    },
+    pop: function(){
+        this.arr.splice(this.arr.length -1,1);
+    },
+    peek: function(){
+        console.log(this.arr[this.arr.length-1]);
+    }
+};
 
-var stackArray =[];
-stackArray.add('Mike Mahon');
-stackArray.add('Ram Sahota');
-function push(value) {
-    stackArray[stackArray.length] = value;
+function StackConstructor() {
+    var s = Object.create(Stack);
+    s.arr = ["Mike", "Ram"];
+    return s;
 }
-function pop(){
-    stackArray.splice(stackArray.length,1);
-}
-function peek(){
-    console.log(stackArray[stackArray.length-1]);
-}
+
+var newStack = StackConstructor();
+newStack.push("Mike");
+newStack.push("Rom");
+newStack.peek(); //should print Ron
+newStack.pop();
+newStack.peek(); //should print Mike
+newStack.pop();
+newStack.peek();
